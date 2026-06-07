@@ -1,7 +1,8 @@
 # Novel-to-Script
 
 AI 小说转剧本工具 - 将小说文本自动转换为结构化剧本（YAML 格式）。
-
+# demo链接
+https://www.bilibili.com/video/BV1t5Et6GEmX/?spm_id_from=333.1387.homepage.video_card.click&vd_source=7371784cc7a1efe0a212d81610b86b6f
 ## 功能特性
 
 - [x] 小说文本解析与场景分割

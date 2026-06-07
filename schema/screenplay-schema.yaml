@@ -1,0 +1,111 @@
+# Novel-to-Script YAML Schema
+# Version: 1.0.0
+# Compatible: Fountain, Final Draft
+
+_version:
+  schema_version: "1.0.0"
+  schema_url: "https://github.com/yourname/novel-to-script/blob/main/schema/screenplay-schema.yaml"
+  last_modified: "2026-06-05"
+  compatible_tools: ["Final Draft 13", "Celtx", "WriterDuet", "Fountain"]
+
+_project:
+  repo_url: "string"
+  commit_hash: "string"
+  pr_number: "string"
+  generated_by: "string"
+  generation_date: "string"
+
+metadata:
+  title: "string"
+  original_title: "string"
+  author: "string"
+  source_author: "string"
+  genre: "string"
+  format: "string"
+  total_scenes: 0
+  total_pages: 0
+  draft_version: "string"
+  created_at: "string"
+  logline: "string"
+  fountain_compatible: true
+
+characters:
+  - id: "char_xxx"
+    name: "string"
+    code_name: "STRING"
+    aliases: ["string"]
+    age: 0
+    gender: "string"
+    occupation: "string"
+    traits: ["string"]
+    arc: "string"
+    description: "string"
+    scene_count: 0
+    total_lines: 0
+    total_words: 0
+    first_appearance: "string"
+    last_appearance: "string"
+    notes: "string"
+
+scenes:
+  - scene_id: "SCxxx"
+    act: "string"
+    sequence: "string"
+    slugline:
+      int_ext: "string"
+      location: "string"
+      time: "string"
+    full_slugline: "string"
+    mood: "string"
+    characters_present: ["char_xxx"]
+    estimated_duration: "string"
+    pages: 0
+    content:
+      - type: "scene_heading"
+        text: "string"
+
+      - type: "action"
+        text: "string"
+        notes: "string"
+
+      - type: "character"
+        name: "string"
+        id: "char_xxx"
+        extension: "string"
+
+      - type: "parenthetical"
+        text: "string"
+        emotion: "string"
+
+      - type: "dialogue"
+        text: "string"
+        emotion: "string"
+        delivery: "string"
+        parenthetical: "string"
+        offscreen: false
+        voiceover: false
+
+      - type: "transition"
+        text: "string"
+
+      - type: "shot"
+        shot_type: "string"
+        description: "string"
+
+      - type: "sound"
+        description: "string"
+        source: "string"
+
+notes:
+  - scene_id: "string"
+    type: "string"
+    author: "string"
+    text: "string"
+    created_at: "string"
+    pr_reference: "string"
+
+extensions:
+  custom_fields: {}
+  production_notes: {}
+  scheduling_info: {}
+  git_history: []
